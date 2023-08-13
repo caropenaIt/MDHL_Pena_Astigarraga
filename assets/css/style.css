@@ -10,6 +10,9 @@ body{
   font-family: 'Bitter', serif;
   color: rgb(56, 56, 56);
 }
+p{
+  padding: 10px;
+}
 /* header */
 .header.box{
   display: flex;
@@ -53,6 +56,8 @@ a{
   border-radius: 10px;
   width: 150px;
   text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 a:hover{
   cursor: pointer;
@@ -127,6 +132,10 @@ span{
 .subrayado{
   text-decoration: underline;
 }
+.centrar-tabla{
+  display: flex;
+  justify-content: center;
+}
 table, tr,th,td{
   border: 2px solid orange;
   border-collapse: collapse;
@@ -134,8 +143,22 @@ table, tr,th,td{
 }
 table{
   margin-top: 10px;
-  width: 600px;
+  width: 700px;
   height: 450px;
+}
+.maps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.maps > div{
+  border: dotted 5px orange;
+  text-align: center;
+}
+.center{
+  text-align: center;
 }
 /* rules */
 .rule-titular{
@@ -157,4 +180,65 @@ ul, ol, li{
 }
 .ul-li{
   list-style-type: '🏒';
+}
+/* forms */
+form{
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.boton{
+  width: 100px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
+.boton:hover{
+  cursor: pointer;
+  background-color: rgb(255, 191, 73);
+}
+fieldset:nth-child(odd){
+  border: solid 2px orangered;
+}
+fieldset:nth-child(even){
+  border: solid 2px rgb(252, 128, 83);
+}
+/* media queries */
+@media (min-width: 400px) and (max-width: 900px){
+  /* ajustes generales */
+.nav-box{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* game info */
+table{
+  width: 600px;
+}
+.michael-contact{
+  flex-wrap: wrap;
+}
+.maps iframe{
+  width: 300px;
+}
+/* contact */
+.contact{
+  gap: 7px;
+}
+/* forms */
+fieldset{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.side-boxes{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 }
