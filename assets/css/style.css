@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(255, 255, 46);
-  font-family: 'Bitter', serif;
+  /* background-color: rgb(255, 255, 46); */
+  background-color: lightgrey;
+  font-family: 'Bitter', sans-serif;
   color: rgb(56, 56, 56);
 }
 p{
