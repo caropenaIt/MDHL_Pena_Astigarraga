@@ -210,15 +210,24 @@ fieldset:nth-child(even){
   border: solid 2px rgb(252, 128, 83);
 }
 /* media queries */
-@media (min-width: 400px) and (max-width: 900px){
+
+@media (min-width: 320px) and (max-width: 550px){
   /* ajustes generales */
 .nav-box{
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+/* Home */
+.main-box{
+  gap: 5px;
+}
+.to-side{
+  font-size: 12px;
 }
 /* game info */
+
 table{
-  width: 600px;
+  width: 400px;
 }
 .michael-contact{
   flex-wrap: wrap;
@@ -228,7 +237,11 @@ table{
 }
 /* contact */
 .contact{
-  gap: 7px;
+  gap: 5px;
+}
+.img-task1{
+  width: 160px;
+  height: 160px;
 }
 /* forms */
 fieldset{
